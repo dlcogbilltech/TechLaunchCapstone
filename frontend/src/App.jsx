@@ -6,6 +6,7 @@ import heroImg from './assets/hero.png'
 import './App.css'
 
 import Header from './components/Header';
+import SideNav from './components/SideNav';
 import Welcome from './pages/Welcome';
 import ContentList from './pages/ContentList';
 import ViewContent from './pages/ViewContent';
@@ -18,15 +19,19 @@ function App() {
   return (
     <BrowserRouter>
     <div className="App">
-      <Header loggedIn={loggedIn} setLoggedIn={setLoggedIn}/>
+      
       <div className="pageBody">
-        <Routes>
-          <Route path="/" element={<Welcome />} />
-          <Route path="/contents" element={<ContentList />} />
-          <Route path="/contents/:id" element={<ViewContent />} />
-          <Route path="/reglog" element={<RegLog setLoggedIn={setLoggedIn} />} />
-        </Routes>
+        <SideNav/>
+        <div className="page">
+          <Routes>
+            <Route path="/" element={<Welcome loggedIn={loggedIn} setLoggedIn={setLoggedIn}/>} />
+            <Route path="/contents" element={<ContentList />} />
+            <Route path="/contents/:id" element={<ViewContent />} />
+            <Route path="/reglog" element={<RegLog setLoggedIn={setLoggedIn} />} />
+          </Routes>
+        </div>
       </div>
+      <Header loggedIn={loggedIn} setLoggedIn={setLoggedIn}/>
     </div>
     </BrowserRouter>
   )

@@ -8,7 +8,7 @@ function ContentList({ loggedIn }) {
 
     useEffect(() => {
         axios
-            .get('http://localhost:8000/api/contents')
+            .get('http://localhost:5000/api/contents')
             .then((response) =>{
                 setContents(response.data);
             })
@@ -19,7 +19,7 @@ function ContentList({ loggedIn }) {
 
     return (
     <div>
-        <div className="contentList">
+        <div>
             {contents.map((content) => (
             <div className="contentListItem" key={content._id}>
                 <div>

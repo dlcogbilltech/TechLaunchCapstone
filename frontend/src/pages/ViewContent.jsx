@@ -21,7 +21,7 @@ function ViewContent({ loggedIn }) {
     },[]);
     
     return (
-        <div className="contentView">
+        <div>
             {content ? <ContentItem content={content} /> : <p>Loading</p> }
         </div>
     )

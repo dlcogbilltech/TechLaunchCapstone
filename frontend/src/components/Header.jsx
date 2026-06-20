@@ -10,14 +10,6 @@ function Header({ loggedIn, setLoggedIn }) {
     const [contents, setContents] = useState(null);
 
     useEffect(() => {
-        axios
-            .get('http://localhost:5000/api/contents')
-            .then((response) =>{
-                setContents(response.data);
-            })
-            .catch((error) => {
-                console.log('Error in get contents', error);
-            })
         const userToken = Cookies.get('userToken');
         if (userToken) {
             const user = jwtDecode(userToken);
@@ -45,13 +37,8 @@ function Header({ loggedIn, setLoggedIn }) {
         
     return (
         <div className="header">
-            <div className="contentLinkContainer">
-                {contents?.map((content) => (
-                    <div key={content._id}>
-                        {content ? <ContentLink content={content} /> : <p>Loading</p> }
-                    </div>
-                ))}
-            </div>
+            <img className="profilePicImg" src="/profileThumb.png" alt="Profile Thumbnail"/>
+            <p className="nameTag">David Lee Cogbill</p>
             {user ? (
                     <div className="userBox">
                         <p>Welcome Back {user.firstName} {user.lastName}</p>

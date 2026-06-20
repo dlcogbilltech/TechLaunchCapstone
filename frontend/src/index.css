@@ -109,3 +109,11 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+@font-face {
+  font-family: 'YourCustomFont';
+  src: url('./fonts/BrotherSignature-7BWnK.otf') format('otf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; /* Stops text from being invisible while the font loads */
+}

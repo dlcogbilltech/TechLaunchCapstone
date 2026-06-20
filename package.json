@@ -1,0 +1,13 @@
+{
+    "scripts": {
+        "backend": "cd backend && npm run dev",
+        "frontend": "cd frontend && npm run dev",
+        "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+    },
+    "devDependencies": {
+        "concurrently": "^10.0.3"
+    },
+    "dependencies": {
+        "react-router-hash-link": "^2.4.3"
+    }
+}

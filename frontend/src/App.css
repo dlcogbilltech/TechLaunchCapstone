@@ -1,18 +1,31 @@
+@font-face {
+  font-family: 'YourCustomFont';
+  src: url('./fonts/BrotherSignature-7BWnK.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; /* Stops text from being invisible while the font loads */
+}
+
 /* Global Styles */
 body {
   background-color: black;
+  overflow: hidden;
 }
+h3, h4 {
+  margin: 5px 5px;
+}
+p {
+  color: gray;
+  text-align: left;
+  text-indent: 30px;
+}
+
 .App {
   margin: 0px auto;
   width: 80%;
   background-color: black;
-  height: 95%;
-}
-
-h3 {
-  background-color: white;
-  padding: 5px;
-  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -20,8 +33,19 @@ img {
 }
 
 .pageBody{
+  margin: 5px 0px 5px 0px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  height: calc(100vh - 160px); /* Adjust for header/footer height */
+}
+
+.sideNav {
+  display: flex;
+  flex-direction: column;
   background-color: #FFE5A0;
-  margin: 20px 0px 20px 0px;
+  margin: 5px 0px 5px 0px;
   padding: 5px;
   border-radius: 12px;
 }
@@ -31,10 +55,25 @@ img {
   display: flex;
   justify-content: space-between;
   background-color: #FFE5A0;
-  margin: 20px 0px 20px 0px;
+  margin: 5px 0px 5px 0px;
   padding: 5px;
   border-radius: 12px;
   height: fit-content;
+}
+
+.profilePicImg {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.nameTag {
+  font-family: 'YourCustomFont', sans-serif; /* Defines the font */
+  font-size: 50px;
+  font-weight: bold;
+  display: flex;                 /* Enable flexbox */
+  align-items: center;           /* Vertically center content */
+  justify-content: center;       /* Optional: horizontally center */
 }
 
 .userBox {
@@ -43,16 +82,82 @@ img {
   flex-direction: column;
 }
 
+/*Page Class*/
+.page {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFE5A0;
+  margin: 5px 5px 5px 5px;
+  padding: 5px;
+  border-radius: 12px;
+  height: 95%; /* Adjust for header/footer height */
+  overflow-y: auto; /* Enable vertical scroll */
+  scroll-margin-top: 200px;
+}
+
+/* Welcome Page */
+.welcomePage {
+  display: flex;
+  align-items: stretch;
+}
+
+.aboutMe {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.aboutMeText {
+  display: flex;
+  flex-direction: column;
+}
+.certifications {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.certificationImg {
+    width: 125px;
+    height: 125px;
+    object-fit: contain; /* Keep aspect ratio, fit inside */
+    display: block;
+    flex-grow: 1;
+}
+
+.educationList {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.educationItem {
+  display: flex;
+  align-items: flex-start;
+  margin: 5px 0px 5px 0px;
+  padding: 5px;
+}
+
+.educationText {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Contents */
 .contentLink {
   display: flex;
   flex-direction: column;
-  margin: 2px;
-  padding: 5px;
+  padding: 10px;
+  margin: 10px 25px;
+}
+
+.contentLinkThumb {
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
 }
 
 .contentLinkContainer {
   display: flex;
+  margin-bottom: 20px;
+  justify-content: flex-start;
 }
 
 .contentListItem {
@@ -64,13 +169,23 @@ img {
 }
 
 .contentLinkImg {
-  border-radius: 50%;
   width: 75px;
 }
 
-.contentView {
+.linkTextContainer {
   display: flex;
-  width: 100%;
+  flex-direction: column;
+  width:fit-content;
+  padding: 5px;
+  margin: 5px;
+}
+
+.linkText {
+  color: #F4502A;
+  font-size: 10px;
+  text-align: left;
+  text-indent: 0px;
+  white-space: nowrap;
 }
 
 .contentViewHeader {
