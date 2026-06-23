@@ -38,17 +38,34 @@ function Header({ loggedIn, setLoggedIn }) {
     return (
         <div className="header">
             <img className="profilePicImg" src="/profileThumb.png" alt="Profile Thumbnail"/>
-            <p className="nameTag">David Lee Cogbill</p>
-            {user ? (
-                    <div className="userBox">
-                        <p>Welcome Back {user.firstName} {user.lastName}</p>
-                        <p><Button className="formButton" onClick={handleLogout} >Logout</Button></p>
+            <div className="headerLinks">
+                <div className="contactLinks">
+                    <a href="mailto:dlcogbilltech@gmail.com" target="_blank" rel="noopener noreferrer">dlcogbilltech@gmail.com</a>
+                    <a href="https://www.linkedin.com/in/dlcogbilltech/" target="_blank" rel="noopener noreferrer">LinkedIn: dlcogbilltech</a>
+                    <div className="contactLinks">
+                        <p>GitHub: </p>
+                        <div className="githubLinks">
+                            <a href="https://github.com/dlcogbilltech" target="_blank" rel="noopener noreferrer">dlcogbilltech</a>
+                            <a href="https://github.com/dlcogbill" target="_blank" rel="noopener noreferrer">dlcogbill</a>
+                        </div>
                     </div>
-                ) : (
-                    <div className="userBox">
-                        <p>Log in</p>
-                    </div>
-                )}
+                </div>
+                <div className="footer">
+                    <p className="nameTag">David Lee Cogbill</p>
+                    {user ? (
+                        <div className="userBox">
+                            <p>Welcome Back {user.firstName} {user.lastName}</p>
+                            <p><Button className="formButton" onClick={handleLogout} >Logout</Button></p>
+                        </div>
+                    ) : (
+                        <div className="userBox">
+                            <p>Log in</p>
+                        </div>
+                    )}
+                </div>
+                
+                
+            </div>            
         </div>
     );
 }

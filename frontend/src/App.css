@@ -61,10 +61,33 @@ img {
   height: fit-content;
 }
 
+.contactLinks {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.githubLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
 .profilePicImg {
   border-radius: 50%;
   width: 150px;
   height: 150px;
+}
+
+.headerLinks {
+  flex-grow:1;
+  align-content: space-between;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-end;
 }
 
 .nameTag {
