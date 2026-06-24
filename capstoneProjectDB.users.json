@@ -1,0 +1,32 @@
+[{
+  "_id": {
+    "$oid": "6a2352b2c566aca202ff2464"
+  },
+  "password": "$2b$10$eNh6EWBACz06j5ezYL4pZev7JeD/6RxEyQkW3uguvZpdkNDziyRAS",
+  "email": "dlcogbilltech@gmail.com",
+  "firstName": "David",
+  "lastName": "Cogbill",
+  "createdAt": {
+    "$date": "2026-06-05T22:50:26.973Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-05T22:50:26.973Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a25b9756c80366113137f95"
+  },
+  "password": "$2b$10$SbqERewmpCFvhAiXVrS7kuZHlLMDmwEUOl8BtMrXHxx2sFbZtsmTu",
+  "email": "d_cogbill@yahoo.com",
+  "firstName": "dNyce",
+  "lastName": "Tech",
+  "createdAt": {
+    "$date": "2026-06-07T18:33:25.785Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-07T18:33:25.785Z"
+  },
+  "__v": 0
+}]

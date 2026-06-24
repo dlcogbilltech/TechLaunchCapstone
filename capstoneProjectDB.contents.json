@@ -1,0 +1,72 @@
+[{
+  "_id": {
+    "$oid": "6a25b03e6c80366113137f94"
+  },
+  "title": "Windows Server Lab",
+  "description": "Creating a virtual server for a new client",
+  "fileUrl": "/David_Cogbill_WindowsServerLab_TechFoundry_April2026.pdf",
+  "thumbnail": "/serverThumb.png",
+  "likes": [],
+  "comments": [],
+  "createdAt": {
+    "$date": "2026-06-07T17:54:06.641Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-08T23:27:05.321Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a26c78e6c80366113137f96"
+  },
+  "title": "Raspberry Pi Lab",
+  "description": "Booting a Raspberry Pi from an image and performing administrative tasks",
+  "fileUrl": "/David_Cogbill_RaspberryPiLab_TechFoundry_March2026.pdf",
+  "thumbnail": "/raspPiThumb.png",
+  "likes": [],
+  "comments": [],
+  "createdAt": {
+    "$date": "2026-06-08T13:45:50.856Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-18T00:47:05.305Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a334eb94622c6bb61d8dc05"
+  },
+  "title": "Windows Imaging and Deployment Lab",
+  "description": "Setup a simple imaging environment using WDS",
+  "fileUrl": "/David_Cogbill_WindowsImagingDeploymentLab_TechFoundry_April2026.pdf",
+  "thumbnail": "/imagingThumb.png",
+  "likes": [],
+  "comments": [],
+  "createdAt": {
+    "$date": "2026-06-18T01:49:45.687Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-18T01:49:45.687Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a355a09c9c46c94662b83de"
+  },
+  "title": "Windows Hardware Lab",
+  "description": "Troubleshoot a PC, install Windows 10, and boot without errors",
+  "fileUrl": "/David_Cogbill_Hardwarelab_TechFoundry_March2026.pdf",
+  "thumbnail": "/hardwareThumb.png",
+  "likes": [],
+  "comments": [],
+  "createdAt": {
+    "$date": "2026-06-19T15:02:33.121Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-19T15:02:33.121Z"
+  },
+  "__v": 0
+}]
